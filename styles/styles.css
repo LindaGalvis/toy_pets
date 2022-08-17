@@ -1,0 +1,164 @@
+/* importar fuente desde google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap');
+
+:root {
+    --color-primary: #c53eba;
+    --color-secondary: #fff;
+    --cards-shadow: 1px 1px 10px 0px #63226c57;
+}
+
+/* selector universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* selector de etiqueta html */
+body {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    position: -webkit-sticky; 
+    position: sticky; 
+    top: 0;
+    z-index: 1;
+}
+
+header img {
+    width: 60px;
+    filter: invert(1);
+}
+
+header ul {
+    display: flex;
+    column-gap: 20px;
+}
+
+header ul li a {
+    color: var(--color-secondary);
+}
+
+/* ejemplo de selector de hijos */
+/* footer table tr th h2 {
+    color: red
+} */
+
+section {
+    padding: 50px;
+}
+
+
+footer {
+    padding: 40px 40px 10px 40px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 40px;
+    grid-template-areas:
+        "logo contacto social"
+        "date date date"
+    ;
+    justify-items: center;
+    align-items: space-evenly;
+    /* background: url('https://th.bing.com/th/id/R.1762074e128e9194fb47790bfcae73a7?rik=oMNZn6NLNO7uGw&pid=ImgRaw&r=0'); */
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+footer img {
+    filter: invert(1);
+}
+
+.logo-toypets-footer {
+    grid-area: logo;
+}
+.logo-toypets-footer img{
+    animation-name: animacion_logo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-out
+}
+
+@keyframes animacion_logo {
+from{transform:rotateY(0)}
+to {
+    transform: rotateY(360deg)}
+
+}
+
+.contacto-footer {
+    grid-area: contacto;
+}
+
+.social-footer {
+    grid-area: social;
+}
+
+.social-footer-logos {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.date-toypets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    grid-area: date;
+}
+
+.botton-menu {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 500px;
+        text-align: center;
+    }
+
+    header ul {
+        display: none;
+
+    }
+
+    .botton-menu {
+        display: block;
+        background-color: transparent;
+        border-color: transparent;  
+    }
+
+    .botton-menu img {
+        height: 35px;
+        width: 35px;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+}
