@@ -73,6 +73,13 @@
     color: var(--color-primary);
     background-color: var(--color-secondary);
 }
+
+.card-producto-botton {
+    cursor: pointer;
+    border-color: transparent;
+    background-color: transparent;
+}
+
 @media (max-width: 600px) {
     footer {
         display: flex;
@@ -83,10 +90,7 @@
         text-align: center;
     }
 
-    header ul {
-        display: none;
-
-    }
+ 
 
     .botton-menu {
         display: block;
@@ -99,8 +103,5 @@
         width: 35px;
     }
 
-    header {
-        justify-content: space-between;
-        padding: 0 30px;
-    }
+
 }

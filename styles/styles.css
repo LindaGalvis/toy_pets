@@ -24,33 +24,35 @@ body {
     min-height: 100vh;
 }
 
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 70px;
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
-    position: -webkit-sticky; 
-    position: sticky; 
-    top: 0;
-    z-index: 1;
-}
 
-header img {
+.navbar-brand img {
     width: 60px;
     filter: invert(1);
 }
 
-header ul {
-    display: flex;
-    column-gap: 20px;
+.navbar.bg-light {
+    background-color: var(--color-primary)!important;
 }
 
-header ul li a {
-    color: var(--color-secondary);
+.nav-item .nav-link {
+color: white;
+}
+.nav-item .nav-link.active {
+   color: white;
+   font-weight:600;
+   text-decoration: underline;
+}
+.navbar-toggler {
+    filter: invert(1);
+
+}
+.navbar-collapse.justify-content-end.collapse.show {
+    background-color: var(--color-primary);
+    width: 100%;
+    padding: 13px;
 }
 
+    
 /* ejemplo de selector de hijos */
 /* footer table tr th h2 {
     color: red
@@ -131,6 +133,14 @@ to {
     display: none;
 }
 
+.sticky-top {
+    position: -webkit-sticky; 
+    position: sticky; 
+    top: 0;
+    z-index: 1;
+
+}
+
 @media (max-width: 600px) {
     footer {
         display: flex;
@@ -141,10 +151,6 @@ to {
         text-align: center;
     }
 
-    header ul {
-        display: none;
-
-    }
 
     .botton-menu {
         display: block;
@@ -157,8 +163,6 @@ to {
         width: 35px;
     }
 
-    header {
-        justify-content: space-between;
-        padding: 0 30px;
-    }
+ 
 }
+

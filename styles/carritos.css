@@ -16,14 +16,12 @@
     box-shadow: 1px 1px 10px 0px #63226c57;
     padding: 10px 25px;
     margin: 10px 0;
-
 }
 
 .carrito-item-row input,
 .carrito-item-row h4,
 .carrito-item-row p {
     margin: 8px 0;
-
 }
 
 .carrito-item-row button {
