@@ -44,14 +44,15 @@
 
 .card-producto-info {
     padding: 0 10px;
-    height: calc(100% - 150px);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    height: 131px;
 }
 
 .card-producto-info p {
     font-size: 14px;
+    margin-bottom: 0;
 }
 
 .card-producto-info input {

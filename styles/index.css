@@ -35,6 +35,7 @@ section,
     box-shadow: 1px 1px 10px 0px #63226c57;
     /* display: inline-block; */
     transition: all .2s;
+    text-decoration: none;
 }
 
 .card-destacado:hover{
@@ -51,6 +52,7 @@ section,
     text-align: center;
     font-size: 14px;
     margin-top: 21px;
+    font-weight: 600;
 }
 
 .card-destacado hr {
@@ -90,6 +92,7 @@ section,
     overflow: hidden;
     color: var(--color-secondary);
     box-shadow: 1px 1px 10px 0px #63226c57;
+    text-decoration: none;
     /* display: inline-block; */
 }
 
@@ -102,6 +105,7 @@ section,
     text-align: center;
     font-size: 14px;
     margin-top: 21px;
+    font-weight: 600;
 }
 
 .card-oferta hr {

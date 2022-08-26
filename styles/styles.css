@@ -24,6 +24,12 @@ body {
     min-height: 100vh;
 }
 
+.navbar-collapse.justify-content-end.collapse.show {
+    background-color: var(--color-primary);
+    width: 100%;
+    padding: 13px;
+}
+
 
 .navbar-brand img {
     width: 60px;
@@ -43,14 +49,9 @@ color: white;
    text-decoration: underline;
 }
 .navbar-toggler {
-    filter: invert(1);
+    filter: invert(1);  
+}
 
-}
-.navbar-collapse.justify-content-end.collapse.show {
-    background-color: var(--color-primary);
-    width: 100%;
-    padding: 13px;
-}
 
     
 /* ejemplo de selector de hijos */
