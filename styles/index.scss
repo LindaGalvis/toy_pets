@@ -1,0 +1,19 @@
+@import "./mixins";
+@import "./partials/card-destacado";
+@import "./partials/banner-container";
+@import "./partials/ofertas-container";
+@import "./partials/marcas-container";
+
+
+
+
+
+
+.body-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 70px auto auto auto auto;
+}
+section {
+    padding: 50px;
+}

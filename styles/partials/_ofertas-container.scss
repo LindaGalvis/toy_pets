@@ -1,0 +1,28 @@
+.ofertas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 30px;
+    margin-top: 40px;
+
+    .card-oferta {
+        background-color: var(--color-primary);
+        @include dimension (210px, 249px);
+        border-radius: 8px;
+        overflow: hidden;
+        color: var(--color-secondary);
+        box-shadow: 1px 1px 10px 0px #63226c57;
+        text-decoration: none;
+        img {
+            @include dimension (210px, 183px);
+        }
+        h3 {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 21px;
+            font-weight: 600;
+        }
+
+    }
+}

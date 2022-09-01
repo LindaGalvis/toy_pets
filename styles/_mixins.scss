@@ -1,0 +1,11 @@
+@mixin dimension ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex-centrado { 
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    
+}
